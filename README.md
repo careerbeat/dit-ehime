@@ -15,7 +15,7 @@
 #### sample-vm
 - Vagrant + VM で仮想マシン立ち上げ
 - githubに上げる
-- [手順書の作成]()
+- [手順書の作成](https://github.com/careerbeat/dit-ehime/wiki/CentOS導入手順(SOC研修環境構築))
 
 #### SOCの説明
 
