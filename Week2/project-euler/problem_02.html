@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<script type="text/javascript">
+
+		var numTest = function(){
+			var array = [];
+			var num1 = 1;
+			var num2 = 2;
+			array.push(num1);
+  			while (num2 <= 4000000) {
+  				var temp = num2;
+     			num2 += num1;
+     			num1 = temp;
+     			array.push(num1);
+  			}
+
+  			var gusuSum = 0;
+  			for (j = 0; j < array.length; j++) {
+  				if (array[j] % 2 == 0) {
+  					gusuSum += array[j];
+  				}
+  			}
+
+  			console.log(array)
+;
+  			console.log(gusuSum);
+		};
+		numTest();
+	</script>
+</head>
+<body>
+	問題2 コンソールに表示してます
+</body>
+</html>
