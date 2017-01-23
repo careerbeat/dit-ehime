@@ -1,0 +1,19 @@
+<script>
+
+for(var i = 999; i >= 900; i--) {
+  for(var j = 999; j >= 900; j--) {
+
+    var str = (i * j).toString();
+    var i_01 = str.substr(0 , 1);
+    var i_02 = str.substr(1 , 1);
+    var i_03 = str.substr(2 , 1);
+    var i_04 = str.substr(3 , 1);
+    var i_05 = str.substr(4 , 1);
+    var i_06 = str.substr(5 , 1);
+
+    if (i_01 === i_06 && i_02 === i_05 && i_03 === i_04) {
+      console.log(str + " = " + i + " × " + j);
+    }
+  }
+}
+</script>
