@@ -1,0 +1,3 @@
+kubota apple 50
+manabe orange 70
+nabeta book 600
