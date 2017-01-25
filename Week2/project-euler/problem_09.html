@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<script type="text/javascript">
+
+		var numTest = function(){
+			for (a = 1;a <= 1000; a++) {
+				for (b = 1;b <= 1000; b++) {
+					for (c = 1;c <= 1000; c++) {
+						if ((a * a + b * b == c * c) && a + b + c == 1000 && a < b && b < c) {
+							console.log("a = " + a);
+							console.log("b = " + b);
+							console.log("c = " + c);
+							console.log("a * b * c = " + (a * b * c));
+						}
+
+					}
+				}
+			}
+
+		};
+		numTest();
+	</script>
+</head>
+<body>
+	問題9 コンソールに表示してます
+</body>
+</html>

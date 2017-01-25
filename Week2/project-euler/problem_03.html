@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<script type="text/javascript">
+
+		function isPrime( x ) {
+			if (x <= 1) {
+		        return false
+			}
+
+		    for (i = 2; i < x - 1; i++) {
+		        if (x % i == 0) {
+		            return false
+		        }
+		    }
+
+		    return true
+		}
+
+		var numTest = function(){
+			var num = 600851475143;
+			console.log(num);	
+
+			var array = [];
+			var curNum = num;
+			var curPrime = 2;
+			while (curNum >= curPrime) {
+
+				if (isPrime(curPrime)　&& num % curPrime == 0) {
+					array.push(curPrime);
+					curNum = curNum / curPrime;
+				}
+				curPrime ++;
+				console.log(curNum);
+				console.log(curPrime);
+			}
+
+			console.log(array);
+		};
+		numTest();
+	</script>
+</head>
+<body>
+	問題3 コンソールに表示してます
+</body>
+</html>
